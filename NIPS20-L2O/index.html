@@ -29,7 +29,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tianlong-chen.github.io/images/NIPS20_L2O.png">
 <meta property="article:published_time" content="2020-12-06T06:00:00.000Z">
-<meta property="article:modified_time" content="2020-09-26T01:25:35.242Z">
+<meta property="article:modified_time" content="2021-02-01T21:38:53.090Z">
 <meta property="article:author" content="Tianlong Chen (陈天龙)">
 <meta property="article:tag" content="Learning to Optimize">
 <meta property="article:tag" content="Imitation Learning">
@@ -200,7 +200,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-09-25 20:25:35" itemprop="dateModified" datetime="2020-09-25T20:25:35-05:00">2020-09-25</time>
+                <time title="Modified: 2021-02-01 15:38:53" itemprop="dateModified" datetime="2021-02-01T15:38:53-06:00">2021-02-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,7 +231,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="Training-Stronger-Baselines-for-Learning-to-Optimize"><a href="#Training-Stronger-Baselines-for-Learning-to-Optimize" class="headerlink" title="Training Stronger Baselines for Learning to Optimize"></a>Training Stronger Baselines for Learning to Optimize</h2><p>[<a href="">Paper</a>] [<a href="https://github.com/VITA-Group/L2O-Training-Techniques">Code</a>]</p>
+        <h2 id="Training-Stronger-Baselines-for-Learning-to-Optimize"><a href="#Training-Stronger-Baselines-for-Learning-to-Optimize" class="headerlink" title="Training Stronger Baselines for Learning to Optimize"></a>Training Stronger Baselines for Learning to Optimize</h2><p>[<a href="https://papers.nips.cc/paper/2020/file/51f4efbfb3e18f4ea053c4d3d282c4e2-Paper.pdf" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/L2O-Training-Techniques" target="_blank" rel="noopener">Code</a>]</p>
 <h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>Learning to optimize (<strong>L2O</strong>) has gained increasing attention since classical optimizers require laborious problem-specific design and hyperparameter tuning. However, there is a gap between the practical demand and the achievable performance of existing <strong>L2O models</strong>. Specifically, those learned optimizers are applicable to only a limited class of problems, and often exhibit instability. With many efforts devoted to designing more sophisticated L2O models, we argue for another orthogonal, under-explored theme: the <strong>training techniques</strong> for those L2O models. We show that even the simplest L2O model could have been trained much better.</p>
 <p>We first present a progressive training scheme to gradually increase the optimizer unroll length, to mitigate a well-known L2O dilemma of truncation bias (shorter unrolling) versus gradient explosion (longer unrolling). We further leverage off-policy imitation learning to guide the L2O learning , by taking reference to the behavior of analytical optimizers. Our improved training techniques are plugged into a variety of state-of-the-art L2O models, and immediately boost their performance, without making any change to their model structures. Especially, by our proposed techniques, <strong>an earliest and simplest L2O model can be trained to outperform the latest complicated L2O models</strong> on a number of tasks. Our results demonstrate a greater potential of L2O yet to be unleashed, and urge to rethink the recent progress. The codes are publicly available at: <a href="https://github.com/VITA-Group/L2O-Training-Techniques" target="_blank" rel="noopener">https://github.com/VITA-Group/L2O-Training-Techniques</a>.</p>
 <img src="../images/NIPS20_L2O.png" width="70%" hight="50%" />
@@ -403,8 +403,8 @@
 
 <div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="snowflake-o"></i>
   </span>
