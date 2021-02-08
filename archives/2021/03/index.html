@@ -20,23 +20,18 @@
     var CONFIG = {"hostname":"tianlong-chen.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="J. Shen, X. Chen, H. Heaton, T.Chen, J. Liu, W. Yin, and Z. Wang, International Conference on Learning Representations 2021. [Fourth Author]">
-<meta property="og:type" content="article">
-<meta property="og:title" content="(ICLR 2021) Learning A Minimax Optimizer, A Pilot Study">
-<meta property="og:url" content="https://tianlong-chen.github.io/ICLR-21-L2O/index.html">
+  <meta name="description" content="Make the change that you want to see in the world">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tianlong Chen (陈天龙)">
+<meta property="og:url" content="https://tianlong-chen.github.io/archives/2021/03/index.html">
 <meta property="og:site_name" content="Tianlong Chen (陈天龙)">
-<meta property="og:description" content="J. Shen, X. Chen, H. Heaton, T.Chen, J. Liu, W. Yin, and Z. Wang, International Conference on Learning Representations 2021. [Fourth Author]">
+<meta property="og:description" content="Make the change that you want to see in the world">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tianlong-chen.github.io/images/ICLR21_L2O.png">
-<meta property="article:published_time" content="2021-04-28T05:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-08T02:03:32.284Z">
 <meta property="article:author" content="Tianlong Chen (陈天龙)">
-<meta property="article:tag" content="Learning to Optimize">
-<meta property="article:tag" content="Curriculum Learning">
+<meta property="article:tag" content="Ph.D Student">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tianlong-chen.github.io/images/ICLR21_L2O.png">
 
-<link rel="canonical" href="https://tianlong-chen.github.io/ICLR-21-L2O/">
+<link rel="canonical" href="https://tianlong-chen.github.io/archives/2021/03/">
 
 
 <script id="page-configurations">
@@ -44,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>(ICLR 2021) Learning A Minimax Optimizer, A Pilot Study | Tianlong Chen (陈天龙)</title>
+  <title>Archive | Tianlong Chen (陈天龙)</title>
   
 
 
@@ -162,114 +157,50 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content archive">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR-21-L2O/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          (ICLR 2021) Learning A Minimax Optimizer, A Pilot Study
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-28 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-28T00:00:00-05:00">2021-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 20:03:32" itemprop="dateModified" datetime="2021-02-07T20:03:32-06:00">2021-02-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICLR-21/" itemprop="url" rel="index"><span itemprop="name">ICLR'21</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
-            <div class="post-description">J. Shen, X. Chen, H. Heaton, T.Chen, J. Liu, W. Yin, and Z. Wang, International Conference on Learning Representations 2021. [Fourth Author]</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">Um..! 28 posts in total. Keep on posting.</span>
+      </div>
 
       
-        <h2 id="Learning-A-Minimax-Optimizer-A-Pilot-Study"><a href="#Learning-A-Minimax-Optimizer-A-Pilot-Study" class="headerlink" title="Learning A Minimax Optimizer: A Pilot Study"></a>Learning A Minimax Optimizer: A Pilot Study</h2><p>[<a href="https://openreview.net/pdf?id=nkIDwI6oO4_" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/L2O-Minimax" target="_blank" rel="noopener">Code</a>]</p>
-<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>Solving continuous minimax optimization is of extensive practical interest, yet notoriously unstable and difficult. This paper introduces the learning to optimize (L2O) methodology to the minimax problems for the first time, and addresses its accompanying unique challenges. We first present Twin L2O, the first dedicated minimax L2O framework consisting of two LSTMs for updating min and max variables, respectively. That decoupled design is found to facilitate learning, particularly when the min and max variables are highly non-symmetric. Empirical experiments on a variety of minimax problems corroborates the effectiveness of Twin-L2O. We then discuss a crucial concern of Twin-L2O, i.e., its inevitably limited generalizability to unseen optimizees, and present two complementary strategies. Our first solution, Enhanced Twin-L2O, is empirically applicable for general minimax problems, by improving L2O training via leveraging curriculum learning. We extensively benchmark our algorithms on popular minimax problems, and compare against state-of-the-art minimax solvers. Our second alternative, called Safeguarded Twin L2O, is a preliminary theoretical exploration stating that under some strong assumptions, it is possible to theoretically establish the convergence of Twin-L2O on optimizing any unseen objective.</p>
-<img src="../images/ICLR21_L2O.png" width="70%" hight="50%" />
-
-
-
-
-
-
+    <div class="collection-year">
+      <span class="collection-header">2021</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Learning-to-Optimize/" rel="tag"># Learning to Optimize</a>
-              <a href="/tags/Curriculum-Learning/" rel="tag"># Curriculum Learning</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2021-03-01T00:00:00-06:00"
+              content="2021-03-01">
+          03-01
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/ICASSP21/" itemprop="url">
+            <span itemprop="name">(ICASSP 2021) VGAI, End-to-End Learning of Vision-Based Decentralized Controllers for Robot Swarms</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/NIPS20-L2O/" rel="prev" title="(NeurIPS 2020 Spotlight Oral) Training Stronger Baselines for Learning to Optimize">
-      <i class="fa fa-chevron-left"></i> (NeurIPS 2020 Spotlight Oral) Training Stronger Baselines for Learning to Optimize
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/ICLR-21-NastyT/" rel="next" title="(ICLR 2021 Spotlight Oral) Undistillable, Making A Nasty Teacher That CANNOT teach students">
-      (ICLR 2021 Spotlight Oral) Undistillable, Making A Nasty Teacher That CANNOT teach students <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -337,19 +268,19 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

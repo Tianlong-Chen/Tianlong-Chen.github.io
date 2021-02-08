@@ -20,23 +20,24 @@
     var CONFIG = {"hostname":"tianlong-chen.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="T. Chen*, Z. Zhang*, S. Liu, S. Chang, and Z. Wang, International Conference on Learning Representations 2021. [Co-first Author]">
+  <meta name="description" content="H. Ma, T. Chen, T. Hu, C. You, X. Xie, and Z. Wang, International Conference on Learning Representations 2021 Spotlight Oral. [Second Author]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(ICLR 2021) Robust Overfitting may be mitigated by properly learned smoothening">
-<meta property="og:url" content="https://tianlong-chen.github.io/ICLR-21-ADV/index.html">
+<meta property="og:title" content="(ICLR 2021 Spotlight Oral) Undistillable, Making A Nasty Teacher That CANNOT teach students">
+<meta property="og:url" content="https://tianlong-chen.github.io/ICLR21-NastyT/index.html">
 <meta property="og:site_name" content="Tianlong Chen (陈天龙)">
-<meta property="og:description" content="T. Chen*, Z. Zhang*, S. Liu, S. Chang, and Z. Wang, International Conference on Learning Representations 2021. [Co-first Author]">
+<meta property="og:description" content="H. Ma, T. Chen, T. Hu, C. You, X. Xie, and Z. Wang, International Conference on Learning Representations 2021 Spotlight Oral. [Second Author]">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tianlong-chen.github.io/images/ICLR21_ADV.png">
-<meta property="article:published_time" content="2021-05-02T05:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-08T01:52:34.720Z">
+<meta property="og:image" content="https://tianlong-chen.github.io/images/ICLR21_BadT.png">
+<meta property="article:published_time" content="2021-04-29T05:00:00.000Z">
+<meta property="article:modified_time" content="2021-02-08T01:57:29.270Z">
 <meta property="article:author" content="Tianlong Chen (陈天龙)">
-<meta property="article:tag" content="Adversarial Robustness">
+<meta property="article:tag" content="Adversarial Learning">
 <meta property="article:tag" content="Knowledge Distillation">
+<meta property="article:tag" content="Privacy Preserving">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tianlong-chen.github.io/images/ICLR21_ADV.png">
+<meta name="twitter:image" content="https://tianlong-chen.github.io/images/ICLR21_BadT.png">
 
-<link rel="canonical" href="https://tianlong-chen.github.io/ICLR-21-ADV/">
+<link rel="canonical" href="https://tianlong-chen.github.io/ICLR21-NastyT/">
 
 
 <script id="page-configurations">
@@ -49,7 +50,7 @@
   };
 </script>
 
-  <title>(ICLR 2021) Robust Overfitting may be mitigated by properly learned smoothening | Tianlong Chen (陈天龙)</title>
+  <title>(ICLR 2021 Spotlight Oral) Undistillable, Making A Nasty Teacher That CANNOT teach students | Tianlong Chen (陈天龙)</title>
   
 
 
@@ -169,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR-21-ADV/">
+    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR21-NastyT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
@@ -182,7 +183,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          (ICLR 2021) Robust Overfitting may be mitigated by properly learned smoothening
+          (ICLR 2021 Spotlight Oral) Undistillable, Making A Nasty Teacher That CANNOT teach students
         </h1>
 
         <div class="post-meta">
@@ -192,14 +193,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-05-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-02T00:00:00-05:00">2021-05-02</time>
+              <time title="Created: 2021-04-29 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-29T00:00:00-05:00">2021-04-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 19:52:34" itemprop="dateModified" datetime="2021-02-07T19:52:34-06:00">2021-02-07</time>
+                <time title="Modified: 2021-02-07 19:57:29" itemprop="dateModified" datetime="2021-02-07T19:57:29-06:00">2021-02-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -219,7 +220,7 @@
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
-            <div class="post-description">T. Chen*, Z. Zhang*, S. Liu, S. Chang, and Z. Wang, International Conference on Learning Representations 2021. [Co-first Author]</div>
+            <div class="post-description">H. Ma, T. Chen, T. Hu, C. You, X. Xie, and Z. Wang, International Conference on Learning Representations 2021 Spotlight Oral. [Second Author]</div>
 
         </div>
       </header>
@@ -230,9 +231,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="Robust-Overfitting-may-be-mitigated-by-properly-learned-smoothening"><a href="#Robust-Overfitting-may-be-mitigated-by-properly-learned-smoothening" class="headerlink" title="Robust Overfitting may be mitigated by properly learned smoothening"></a>Robust Overfitting may be mitigated by properly learned smoothening</h2><p>[<a href="https://openreview.net/forum?id=qZzy5urZw9" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/Alleviate-Robust-Overfitting" target="_blank" rel="noopener">Code</a>]</p>
-<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>A recent study (Rice et al.,  2020) revealed overfitting to be a dominant phenomenon in adversarially robust training of deep networks, and that appropriate early-stopping of adversarial training (AT) could match the performance gains of most recent algorithmic improvements. This intriguing problem of robust overfitting motivates us to seek more remedies. As a pilot study, this paper investigates two empirical means to inject more learned smoothening during AT: one leveraging knowledge distillation and self-training to smooth the logits, the other performing stochastic weight averaging (Izmailov et al., 2018) to smooth the weights. Despite the embarrassing simplicity, the two approaches are surprisingly effective and hassle-free in mitigating robust overfitting. Experiments demonstrate that by plugging in them to AT, we can simultaneously boost the standard accuracy by 3.72%<del>6.68% and robust accuracy by 0.22%</del>2 .03%, across multiple datasets (STL-10, SVHN, CIFAR-10, CIFAR-100, and Tiny ImageNet), perturbation types (ℓ∞ and ℓ2), and robustified methods (PGD, TRADES, and FSGM), establishing the new state-of-the-art bar in AT. We present systematic visualizations and analysis to dive into their possible working mechanisms. We also carefully exclude the possibility of gradient masking by evaluating our models’ robustness against transfer attacks. </p>
-<img src="../images/ICLR21_ADV.png" width="40%" hight="50%" />
+        <h2 id="Undistillable-Making-A-Nasty-Teacher-That-CANNOT-teach-students"><a href="#Undistillable-Making-A-Nasty-Teacher-That-CANNOT-teach-students" class="headerlink" title="Undistillable: Making A Nasty Teacher That CANNOT teach students"></a>Undistillable: Making A Nasty Teacher That CANNOT teach students</h2><p>[<a href="https://openreview.net/pdf?id=0zvfm-nZqQs" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/Nasty-Teacher" target="_blank" rel="noopener">Code</a>]</p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>Knowledge Distillation (KD) is a widely used technique to transfer knowledge from pre-trained teacher models to  (usually more lightweight) student models. However, in certain situations, this technique is more of a curse than a blessing. For instance, KD poses a potential risk of exposing intellectual properties (IPs): even if a trained machine learning model is released in ``black boxes’’ (e.g., as executable software or APIs without open-sourcing code), it can still be replicated by KD through imitating input-output behaviors. To prevent this unwanted effect of KD, this paper introduces and investigates a concept called Nasty Teacher: a specially trained teacher network that yields nearly the same performance as a normal one, but would significantly degrade the performance of student models learned by imitating it. We propose a simple yet effective algorithm to build the nasty teacher, called self-undermining knowledge distillation. Specifically, we aim to maximize the difference between the output of the nasty teacher and a normal pre-trained network. Extensive experiments on several datasets demonstrate that our method is effective on both standard KD and data-free KD, providing the desirable KD-immunity to model owners for the first time. We hope our preliminary study can draw more awareness and interest in this new practical problem of both social and legal importance.</p>
+<img src="../images/ICLR21_BadT.png" width="70%" hight="50%" />
 
 
 
@@ -247,8 +248,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Adversarial-Robustness/" rel="tag"># Adversarial Robustness</a>
+              <a href="/tags/Adversarial-Learning/" rel="tag"># Adversarial Learning</a>
               <a href="/tags/Knowledge-Distillation/" rel="tag"># Knowledge Distillation</a>
+              <a href="/tags/Privacy-Preserving/" rel="tag"># Privacy Preserving</a>
           </div>
 
         
@@ -257,10 +259,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/ICLR-21-LifeLT/" rel="prev" title="(ICLR 2021) Long Live the Lottery, The Existence of Winning Tickets in Lifelong Learning">
-      <i class="fa fa-chevron-left"></i> (ICLR 2021) Long Live the Lottery, The Existence of Winning Tickets in Lifelong Learning
+    <a href="/ICLR21-L2O/" rel="prev" title="(ICLR 2021) Learning A Minimax Optimizer, A Pilot Study">
+      <i class="fa fa-chevron-left"></i> (ICLR 2021) Learning A Minimax Optimizer, A Pilot Study
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/ICLR21-GAN/" rel="next" title="(ICLR 2021) GANs Can Play Lottery Tickets Too">
+      (ICLR 2021) GANs Can Play Lottery Tickets Too <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -334,19 +339,19 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-count">37</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
