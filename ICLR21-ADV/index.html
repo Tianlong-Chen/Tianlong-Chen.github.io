@@ -29,7 +29,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tianlong-chen.github.io/images/ICLR21_ADV.png">
 <meta property="article:published_time" content="2021-05-02T05:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-08T01:52:34.720Z">
+<meta property="article:modified_time" content="2021-03-04T16:52:30.290Z">
 <meta property="article:author" content="Tianlong Chen (陈天龙)">
 <meta property="article:tag" content="Adversarial Robustness">
 <meta property="article:tag" content="Knowledge Distillation">
@@ -199,7 +199,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 19:52:34" itemprop="dateModified" datetime="2021-02-07T19:52:34-06:00">2021-02-07</time>
+                <time title="Modified: 2021-03-04 10:52:30" itemprop="dateModified" datetime="2021-03-04T10:52:30-06:00">2021-03-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,7 +231,7 @@
 
       
         <h2 id="Robust-Overfitting-may-be-mitigated-by-properly-learned-smoothening"><a href="#Robust-Overfitting-may-be-mitigated-by-properly-learned-smoothening" class="headerlink" title="Robust Overfitting may be mitigated by properly learned smoothening"></a>Robust Overfitting may be mitigated by properly learned smoothening</h2><p>[<a href="https://openreview.net/forum?id=qZzy5urZw9" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/Alleviate-Robust-Overfitting" target="_blank" rel="noopener">Code</a>]</p>
-<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>A recent study (Rice et al.,  2020) revealed overfitting to be a dominant phenomenon in adversarially robust training of deep networks, and that appropriate early-stopping of adversarial training (AT) could match the performance gains of most recent algorithmic improvements. This intriguing problem of robust overfitting motivates us to seek more remedies. As a pilot study, this paper investigates two empirical means to inject more learned smoothening during AT: one leveraging knowledge distillation and self-training to smooth the logits, the other performing stochastic weight averaging (Izmailov et al., 2018) to smooth the weights. Despite the embarrassing simplicity, the two approaches are surprisingly effective and hassle-free in mitigating robust overfitting. Experiments demonstrate that by plugging in them to AT, we can simultaneously boost the standard accuracy by 3.72%<del>6.68% and robust accuracy by 0.22%</del>2 .03%, across multiple datasets (STL-10, SVHN, CIFAR-10, CIFAR-100, and Tiny ImageNet), perturbation types (ℓ∞ and ℓ2), and robustified methods (PGD, TRADES, and FSGM), establishing the new state-of-the-art bar in AT. We present systematic visualizations and analysis to dive into their possible working mechanisms. We also carefully exclude the possibility of gradient masking by evaluating our models’ robustness against transfer attacks. </p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>A recent study (Rice et al.,  2020) revealed overfitting to be a dominant phenomenon in adversarially robust training of deep networks, and that appropriate early-stopping of adversarial training (AT) could match the performance gains of most recent algorithmic improvements. This intriguing problem of robust overfitting motivates us to seek more remedies. As a pilot study, this paper investigates two empirical means to inject more learned smoothening during AT: one leveraging knowledge distillation and self-training to smooth the logits, the other performing stochastic weight averaging (Izmailov et al., 2018) to smooth the weights. Despite the embarrassing simplicity, the two approaches are surprisingly effective and hassle-free in mitigating robust overfitting. Experiments demonstrate that by plugging in them to AT, we can simultaneously boost the standard accuracy by 3.72%~6.68% and robust accuracy by 0.22%~2 .03%, across multiple datasets (STL-10, SVHN, CIFAR-10, CIFAR-100, and Tiny ImageNet), perturbation types (ℓ∞ and ℓ2), and robustified methods (PGD, TRADES, and FSGM), establishing the new state-of-the-art bar in AT. We present systematic visualizations and analysis to dive into their possible working mechanisms. We also carefully exclude the possibility of gradient masking by evaluating our models’ robustness against transfer attacks. </p>
 <img src="../images/ICLR21_ADV.png" width="40%" hight="50%" />
 
 
