@@ -29,7 +29,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tianlong-chen.github.io/images/NIPS21_CL.png">
 <meta property="article:published_time" content="2021-12-02T06:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-06T06:09:01.955Z">
+<meta property="article:modified_time" content="2021-12-06T06:21:59.265Z">
 <meta property="article:author" content="Tianlong Chen (陈天龙)">
 <meta property="article:tag" content="Self-Supervision">
 <meta property="article:tag" content="Semi-Supervised Learning">
@@ -204,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:09:01" itemprop="dateModified" datetime="2021-12-06T00:09:01-06:00">2021-12-06</time>
+                <time title="Modified: 2021-12-06 00:21:59" itemprop="dateModified" datetime="2021-12-06T00:21:59-06:00">2021-12-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,7 +236,7 @@
 
       
         <h1 id="Improving-Contrastive-Learning-on-Imbalanced-Data-via-Open-World-Sampling"><a href="#Improving-Contrastive-Learning-on-Imbalanced-Data-via-Open-World-Sampling" class="headerlink" title="Improving Contrastive Learning on Imbalanced Data via Open-World Sampling"></a>Improving Contrastive Learning on Imbalanced Data via Open-World Sampling</h1><p>[<a href="https://papers.nips.cc/paper/2021/file/2f37d10131f2a483a8dd005b3d14b0d9-Paper.pdf" target="_blank" rel="noopener">Paper</a>] [<a href="https://github.com/VITA-Group/MAK" target="_blank" rel="noopener">Code</a>]</p>
-<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>Contrastive learning approaches have achieved great success in learning visual representations with few labels of the target classes. That implies a tantalizing possibility of scaling them up beyond a curated “seed” benchmark, to incorporating more unlabeled images from the internet-scale external sources to enhance its performance. However, in practice, larger amount of unlabeled data will require more computing resources due to the bigger model size and longer training needed. Moreover, open-world unlabeled data usually follows an implicit long-tail class or attribute distribution, many of which also do not belong to the target classes. Blindly leveraging all unlabeled data hence can lead to the data imbalance as well as distraction issues. This motivates us to seek a principled approach to strategically select unlabeled data from an external source, in order to learn generalizable, balanced and diverse representations for relevant classes. In this work, we present an open-world unlabeled data sampling framework called Model-Aware K-center (MAK), which follows three simple principles: (1) tailness, which encourages sampling of examples from tail classes, by sorting the empirical contrastive loss expectation (ECLE) of samples over random data augmentations; (2) proximity, which rejects the out-of-distribution outliers that may distract training; and (3) diversity, which ensures diversity in the set of sampled examples. Empirically, using ImageNet-100-LT (without labels) as the seed dataset and two “noisy” external data sources, we demonstrate that MAK can consistently improve both the overall representation quality and the class balancedness of the learned features, as evaluated via linear classifier evaluation on full-shot and few-shot settings. The code is available at: <a href="https://github.com/VITA-Group/MAK" target="_blank" rel="noopener">https://github.com/VITA-Group/MAK</a></p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>Contrastive learning approaches have achieved great success in learning visual representations with few labels of the target classes. That implies a tantalizing possibility of scaling them up beyond a curated “seed” benchmark, to incorporating more unlabeled images from the internet-scale external sources to enhance its performance. However, in practice, larger amount of unlabeled data will require more computing resources due to the bigger model size and longer training needed. Moreover, open-world unlabeled data usually follows an implicit long-tail class or attribute distribution, many of which also do not belong to the target classes. Blindly leveraging all unlabeled data hence can lead to the data imbalance as well as distraction issues. This motivates us to seek a principled approach to strategically select unlabeled data from an external source, in order to learn generalizable, balanced and diverse representations for relevant classes. In this work, we present an open-world unlabeled data sampling framework called Model-Aware K-center (MAK), which follows three simple principles: (1) tailness, which encourages sampling of examples from tail classes, by sorting the empirical contrastive loss expectation (ECLE) of samples over random data augmentations; (2) proximity, which rejects the out-of-distribution outliers that may distract training; and (3) diversity, which ensures diversity in the set of sampled examples. Empirically, using ImageNet-100-LT (without labels) as the seed dataset and two “noisy” external data sources, we demonstrate that MAK can consistently improve both the overall representation quality and the class balancedness of the learned features, as evaluated via linear classifier evaluation on full-shot and few-shot settings. The code is available at: <a href="https://github.com/VITA-Group/MAK" target="_blank" rel="noopener">https://github.com/VITA-Group/MAK</a>.</p>
 <img src="../images/NIPS21_CL.png" width="90%" hight="70%" />
 
 
@@ -267,8 +267,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/ICML21-GCNLTH/" rel="prev" title="(ICML 2021) A Unified Lottery Ticket Hypothesis for Graph Neural Networks">
-      <i class="fa fa-chevron-left"></i> (ICML 2021) A Unified Lottery Ticket Hypothesis for Graph Neural Networks
+    <a href="/NIPS21-SLTH/" rel="prev" title="(NeurIPS 2021) Sanity Checks for Lottery Tickets, Does Your Winning Ticket Really Win the Jackpot?">
+      <i class="fa fa-chevron-left"></i> (NeurIPS 2021) Sanity Checks for Lottery Tickets, Does Your Winning Ticket Really Win the Jackpot?
     </a></div>
       <div class="post-nav-item">
     <a href="/NIPS21-GN/" rel="next" title="(NeurIPS 2021) Sparse Training via Boosting Pruning Plasticity with Neuroregeneration">
@@ -347,19 +347,19 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">44</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-count">22</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">44</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
