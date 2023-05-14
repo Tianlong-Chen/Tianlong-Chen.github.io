@@ -1,1987 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tianlong Chen | UNC Chapel Hill</title>
+  <meta name="description" content="Tianlong Chen">
+  <meta name="author" content="Tianlong Chen">
+  <meta property="og:title" content="Tianlong Chen" />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="http://www.martinsaveski.com" /> -->
+  <meta property="og:site_name" content="Tianlong Chen" />
+  <!-- <link rel="canonical" href="http://www.martinsaveski.com" /> -->
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tianlong-chen.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-  <meta name="description" content="Make the change that you want to see in the world">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tianlong Chen (陈天龙)">
-<meta property="og:url" content="https://tianlong-chen.github.io/index.html">
-<meta property="og:site_name" content="Tianlong Chen (陈天龙)">
-<meta property="og:description" content="Make the change that you want to see in the world">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Tianlong Chen (陈天龙)">
-<meta property="article:tag" content="Ph.D Student">
-<meta name="twitter:card" content="summary">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~tianlong/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/~tianlong/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/~tianlong/libs/custom/my_css.css>
 
-<link rel="canonical" href="https://tianlong-chen.github.io/">
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/~tianlong/libs/external/jquery-3.1.1.min.js></script>
 
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~tianlong/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~tianlong/libs/external/academicons-1.8.6/css/academicons.min.css>
 
-  <title>Tianlong Chen (陈天龙)</title>
-  
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~tianlong/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/~tianlong/libs/external/skeleton_tabs/skeleton-tabs.js></script>
 
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~tianlong/libs/external/timeline.css>
 
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/~tianlong/libs/external/github-prettify-theme.css>-->
+  <script src=/~tianlong/libs/custom/my_js.js></script>
 
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/~tianlong/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/~tianlong/libs/icon.png>
 
 </head>
+<body>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/~tianlong/"><img class="u-max-full-width" src='/~tianlong/assets/profile-pics/TLC.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Tianlong Chen</h1>
+            <p>Incoming Assistant Professor <br/>  Computer Science, The University of North Carolina at Chapel Hill <br/> Postdoctoral Researcher <br/> CSAIL@MIT - BMI@Harvard - Broad Institute of MIT and Havard </p>
+            <p><small> tianlong@mit.edu </small></p>
+            <p>
+              <span onclick="window.open('https://twitter.com/TianlongChen4')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
 
-  <div class="site-meta">
+              <span onclick="window.open('https://www.linkedin.com/in/tianlong-chen-783862167/')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
 
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Tianlong Chen (陈天龙)</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">What does not kill you makes you stronger</p>
-  </div>
+              <span onclick="window.open('https://github.com/Tianlong-Chen')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
+              <span onclick="window.open('https://scholar.google.com/citations?user=LE3ctn0AAAAJ')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#lab>UNITES Lab</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#publications>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#resume>CV</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#link>Useful Links</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~tianlong/index.html#me>More About me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  Tianlong Chen received the Ph.D. degree in Electrical and Computer Engineering from University of Texas at Austin, TX, USA, in 2023.
+  He will start as an Assistant Professor of Computer Science at The University of North Carolina at Chapel Hill in Fall 2024. Before that,
+  he will be a Postdoctoral Researcher at Massachusetts Institute of Technology (CSAIL@MIT), Harvard (BMI@Harvard), and Borad Institute of MIT & Harvard in 2023-2024.
+  </p>
+
+  <p>
+  His research focuses on building <b> accurate, trustworthy, and efficient machine learning </b> systems. He devotes his most recent passion to various (A) important <u> machine learning problems </u>
+  - sparsity, robustness, learning to optimize, graph learning, and diffusion models; (B) <u> interdisciplinary scientific challenges </u> - bioengineering and quantum comptuing. He received
+  IBM Ph.D. Fellowship, Adobe Ph.D. Fellowship, Graduate Dean's Prestigious Fellowship, and the Best Paper Award from the inaugural Learning on Graphs (LoG) Conference 2022.
+  </p>
+
+  <p>
+  <b style="color:red;">I am looking for highly motivated students, in terms of RA/TA/externship/internship/visiting students. 
+    Interested candidates are strongly encouraged to contact me by email, together with resume and transcripts.</b>
+  </p> 
 </div>
 
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-publication">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Publication</a>
-
-  </li>
-        <li class="menu-item menu-item-bio">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>Bio</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
-
-  </li>
-        <li class="menu-item menu-item-topics">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Topics</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#2023">2023</div></li>
+    <!-- <li><div class="button" data-ref="#all">All</div></li> -->
   </ul>
-</nav>
 
-
-
-
+  <div class="tab-content">
+    <div class="tab-pane active" id="2023">
+      <div class="paper">
+        <p class="title"> &bull; <b> May, 2023 </b> &nbsp;&nbsp; One ACL'23 accepted - Sparse LLM Tuning.
+          <br> &bull; <b> May, 2023 </b> &nbsp;&nbsp; Three ICML'23 accepted - Instant Soup (Oral) + Graph Ladling + L2O Game.
+          <br> &bull; <b> May, 2023 </b> &nbsp;&nbsp; I received the Ph.D. degree from ECE@UT Austin. I deeply appreciate all the support and help from my family, advisor <a href=https://vita-group.github.io/group.html> (Prof. Atlas Wang) </a>, collaborators, and friends! 
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-    </header>
 
-    
-  <div class="reading-progress-bar"></div>
+<div class="docs-section" id="lab">  
+  <h4>UNITES Lab</h4> 
+  <!-- <div class="figure">
+    <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="libs/icon.png" width="100" height="100" /> 
+  </div> -->
+  <p>
+  <b><u>U</u></b>niversity of <b><u>N</u></b>orth Carolina, A<b><u>I</u></b> <b><u>T</u></b>rustworthiness, <b><u>E</u></b>fficiency, and for <b><u>S</u></b>cience (<b><a href="" target="_blank">UNITES</a></b>) Group
+  will be an active research lab at UNC Chapel Hill. Our research interests span the area of artificial intelligence (AI), machine learning (ML), optimization, computer vision, natural
+  language processing, and data science, with two major focuses on (A) establishing robust and efficient AI systems; (B) bridging the gap between AI and societal & scientific challenges.
+  Students' information is presented below.
+  </p>
 
-  <a href="https://github.com/Tianlong-Chen" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+  <ul class="tab-nav">
+    <li><div class="button" data-ref="#phd">Ph.D.</div></li>
+    <li><div class="button" data-ref="#postdoc">PostDoc</div></li>
+    <li><div class="button" data-ref="#master">Master</div></li>
+    <li><div class="button" data-ref="#undergrad">Undergrad</div></li>
+    <li><div class="button active" data-ref="#interns">Visitors/Interns</div></li>     
+  </ul>
 
+  <div class="tab-content">
+    <div class="tab-pane" id="phd">                        
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+    </div>
 
-          <div class="content index posts-expand">
-            
+    <div class="tab-pane" id="postdoc">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/AAAI-22/">
+    </div>  
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/AAAI-22/" class="post-title-link" itemprop="url">(AAAI 2022) Playing Lottery Tickets with Vision and Language</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-01-02 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-02T00:00:00-06:00">2022-01-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-05 22:58:12" itemprop="dateModified" datetime="2021-12-05T22:58:12-06:00">2021-12-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/AAAI-22/" itemprop="url" rel="index"><span itemprop="name">AAAI'22</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <div class="tab-pane" id="master">
       
-          <p>Z. Gan, Y. Chen, L. Li, T. Chen, Y. Cheng, S. Wang and J. Liu, Association for the Advancement of Artificial Intelligence 2021. [The Fourth Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/AAAI-22/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+    <div class="tab-pane" id="undergrad">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/WSDM22/">
+    </div>    
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
+    <div class="tab-pane active" id="interns">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+      <div class="student">
           
-            <a href="/WSDM22/" class="post-title-link" itemprop="url">(WSDM 2022) Bringing Your Own View, Graph Contrastive Learning without Prefabricated Data Augmentations</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-01T00:00:00-06:00">2022-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-05 23:29:16" itemprop="dateModified" datetime="2021-12-05T23:29:16-06:00">2021-12-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/WSDM-22/" itemprop="url" rel="index"><span itemprop="name">WSDM'22</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Y. You, T. Chen, Z. Wang and Y. Shen, Web Search and Data Mining 2022. [The Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/WSDM22/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+        <p class="title">
+          <b><a href="">Kaixin Zheng</a></b> ( Summer 2023 ) [Remote] <br>
+          <b><a href="">Silin Cai</a></b> ( Summer 2023 ) [Remote]
+        </p> 
         
+      </div>              
       
+    </div>    
+
+  </div>
+</div> 
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Full publications on <a href="https://scholar.google.com/citations?user=LE3ctn0AAAAJ" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates authors with equal contribution. <sup>&#x2606;</sup> indicates my students or interns.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button" data-ref="#2023_paper">May 2023 - Now</div></li>
+    <li><div class="button active" data-ref="#selected_phd_paper">Selected during Ph.D.</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane" id="2023_paper">
+
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/Preprint-L2O/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Preprint-L2O/" class="post-title-link" itemprop="url">(ArXiv Preprint 2021) Learning to Optimize, A Primer and A Benchmark</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-31 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-31T00:00:00-06:00">2021-12-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-26 16:42:43" itemprop="dateModified" datetime="2021-03-26T16:42:43-05:00">2021-03-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ArXiv-Preprint/" itemprop="url" rel="index"><span itemprop="name">ArXiv Preprint</span></a>
-                </span>
-            </span>
-
-          
-
+    <div class="tab-pane active" id="selected_phd_paper">
+      <div class="paper">
+        <h5><u>Fundamental Sparse Model and Algorithm</u></h5>
+        <p class="title"><b>The Lottery Ticket Hypothesis for Pre-trained BERT Networks</b></p>
+        <p><b>Tianlong Chen</b>, Jonathan Frankle, Shiyu Chang, Sijia Liu, Yang Zhang, Zhangyang Wang, Michael Carbin</p>
+        <p><i>NeurIPS'20: Conference on Neural Information Processing Systems</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://arxiv.org/pdf/2007.12223.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/BERT-Tickets" target="_blank">Code</a>
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <p class="title"><b>Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!</b></p>
+        <p>Shiwei Liu<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Zhenyu Zhang, Xuxi Chen, Tianjin Huang, Ajay Kumar Jaiswal, Zhangyang Wang</p>
+        <p><i>ICLR'23: International Conference on Learning Representations</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=J6F3lLg4Kdp" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/SMC-Bench" target="_blank">Code</a>
+        </div>
+      </div>
 
+      <div class="paper">
+        <h5><u>Data-driven Discovery of Optimization Algorithms</u></h5>
+        <p class="title"><b>Learning to Optimize: A Primer and A Benchmark</b></p>
+        <p>(&alpha;-&beta;) <b>Tianlong Chen</b>, Xiaohan Chen, Wuyang Chen, Howard Heaton, Jialin Liu, Zhangyang Wang, Wotao Yin</p>
+        <p><i>JMLR'22: Journal of Machine Learning Research</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://jmlr.org/papers/volume23/21-0308/21-0308.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Open-L2O" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Scalable Learning to Optimize: A Learned Optimizer Can Train Big Models</b></p>
+        <p>Xuxi Chen<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Yu Cheng, Weizhu Chen, Ahmed Awadallah, Zhangyang Wang</p>
+        <p><i>ECCV'22: European Conference on Computer Vision</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136830376.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Scalable-L2O" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>Responsible and Reliable Machine Learning</u></h5>
+        <p class="title"><b>Adversarial Robustness: From Self-Supervised Pre-Training to Fine-Tuning</b></p>
+        <p><b>Tianlong Chen</b>, Sijia Liu, Shiyu Chang, Yu Cheng, Lisa Amini, Zhangyang Wang</p>
+        <p><i>CVPR'20: Conference on Computer Vision and Pattern Recognition</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Adversarial_Robustness_From_Self-Supervised_Pre-Training_to_Fine-Tuning_CVPR_2020_paper.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Adv-SS-Pretraining" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Linearity Grafting: How Neuron Pruning Helps Certifiable Robustness</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Huan Zhang<sup>&#8225;</sup>, Zhenyu Zhang, Shiyu Chang, Sijia Liu, Pin-Yu Chen, Zhangyang Wang</p>
+        <p><i>ICML'22: International Conference on Machine Learning</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://proceedings.mlr.press/v162/chen22af/chen22af.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Linearity-Grafting" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>Scalable Graph Neural Networks</u></h5>
+        <p class="title"><b>Bag of Tricks for Training Deeper Graph Neural Networks: A Comprehensive Benchmark Study</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Kaixiong Zhou<sup>&#8225;</sup>, Keyu Duan, Wenqing Zheng, Peihao Wang, Xia Hu, Zhangyang Wang</p>
+        <p><i>TPAMI'22: IEEE Transactions on Pattern Analysis and Machine Intelligence</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://ieeexplore.ieee.org/document/9773017" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/Deep_GCN_Benchmarking" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>You Can Have Better Graph Neural Networks by Not Training Weights at All: Finding Untrained GNNs Tickets</b></p>
+        <p>Tianjin Huang, <b>Tianlong Chen</b>, Meng Fang, Vlado Menkovski, Jiaxu Zhao, Lu Yin, Yulong Pei, Decebal Constantin Mocanu, Zhangyang Wang, Mykola Pechenizkiy, Shiwei Liu</p>
+        <p><i><b style="color:red;">(Best Paper Award)</b> LOG'22: Learning on Graphs Conference</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=dF6aEW3_62O" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/TienjinHuang/UGTs-LoG" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>Graph Contrastive Learning with Augmentations</b></p>
+        <p>Yuning You<sup>&#8225;</sup>, <b>Tianlong Chen<sup>&#8225;</sup></b>, Yongduo Sui, Ting Chen, Zhangyang Wang, Yang Shen</p>
+        <p><i>NeurIPS'20: Conference on Neural Information Processing Systems</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://proceedings.neurips.cc/paper_files/paper/2020/file/3fe230348e9a12c13120749e3f9fa4cd-Paper.pdf" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/Shen-Lab/GraphCL" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <h5><u>AI4Science</u></h5>
+        <p class="title"><b>HotProtein: A Novel Framework for Protein Thermostability Prediction and Editing</b></p>
+        <p><b>Tianlong Chen<sup>&#8225;</sup></b>, Chengyue Gong<sup>&#8225;</sup>, Daniel Jesus Diaz, Xuxi Chen, Jordan Tyler Wells, qiang liu, Zhangyang Wang, Andrew Ellington, Alex Dimakis, Adam Klivans</p>
+        <p><i>ICLR'23: International Conference on Learning Representations</i></p>
+         <div class="paper-buttons">
+            <a class="button" href="https://openreview.net/pdf?id=YDJRFWBMNby" target="_blank">Paper</a>              
+            <a class="button" href="https://github.com/VITA-Group/HotProtein" target="_blank">Code</a>
+        </div>
+
+        <p class="title"><b>QuantumSEA: In-Time Sparse Exploration for Noise Adaptive Quantum Circuits</b></p>
+        <p><b>Tianlong Chen</b>, Zhenyu Zhang, Hanrui Wang, Jiaqi Gu, Zirui Li, David Z. Pan, Frederic Chong, Song Han, Zhangyang Wang</p>
+        <p><i>Under Review </i></p>
+         <div class="paper-buttons">
+            <a class="button" href="" target="_blank">Paper</a>              
+            <a class="button" href="" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+  <p>Full Resume in <a href="https://drive.google.com/file/d/132N0nC5L8Da_Crpx92r--Zxg1aPjQ8yf/view?usp=share_link" target="_blank">PDF</a>.</p>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    
+    <li>
       
-          <p>T. Chen, X. Chen, W. Chen, H. Heaton, J. Liu, Z. Wang, and W.Yin, ArXiv Preprint. [Co-first Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Preprint-L2O/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+      <div class="direction-l">
       
+        <div class="flag-wrapper">
+          <span class="flag">UNC Chapel Hill</span>
+          <span class="time-wrapper"><span class="time">Jul. 2024 - </span></span>
+        </div>
+        <div class="desc"><b>Assistant Professor in Computer Science</b> <br/> UNITES Lab at The University of North Carolina and Chapel Hill</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">MIT and Harvard</span>
+          <span class="time-wrapper"><span class="time">Jul. 2023 - Jul. 2024</span></span>
+        </div>
+        <div class="desc"><b>Postdoctoral Researcher in CSAIL@MIT and BMI@Harvard</b> <br/> Broad Institute of MIT and Havard</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">UT Austin</span>
+          <span class="time-wrapper"><span class="time">Aug. 2018 – May 2023</span></span>
+        </div>
+        <div class="desc"><b>Ph.D. in Electrical and Computer Engineering</b> <br/> R.K. I studied at Texas A&M from Aug. 2018 to Aug. 2020.</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">USTC</span>
+          <span class="time-wrapper"><span class="time">Aug. 2013 - May 2017</span></span>
+        </div>
+        <div class="desc"><b>B.Sc. in Applied Math & B.Eng. in Computer Science</b> <br/> School of the Gifted Young, Univ. of Science and Technology of China</div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+<div class="docs-section" id="link">
+  <h4>Useful Links</h4>
+  <p class="title"> &bull; <b>[Teaching]</b> TBD <br>
+    &bull; <b>[Job Application Package]</b> <a href="https://www.dropbox.com/s/1xktxhg3u9m49nk/Research_Statement.pdf?dl=0" target="_blank">Research Statement</a>, <a href="https://www.dropbox.com/s/9akg98g87x8pdk5/%5BJob%20Talk%5D%20Tianlong%20Chen%20v5.3%20-%20Share.pdf?dl=0" target="_blank">Job Talk Slides</a>, <a href="https://drive.google.com/file/d/132N0nC5L8Da_Crpx92r--Zxg1aPjQ8yf/view?usp=share_link" target="_blank">Resume</a> <br>
+    &bull; <b>[Tool]</b> <a href="https://github.com/VITA-Group/Open-L2O" target="_blank">Learning to Optimize</a> <br>
+    &bull; <b>[UNC]</b> <a href="https://cs.unc.edu/about/why-cs/" target="_blank">Department's Why-UNC Page</a>, <a href="https://cs.unc.edu/about/rankings/" target="_blank">UNC CS Ranking</a>
+  </p>
+</div>
+
+
+<div class="docs-section" id="me">
+    <h4>More About Me</h4>
+    <p class="title"> &bull; I am a big fan of Pok&#233;mon. Playing Pok&#233;mon Go is one of my daily activities. Join in me, catch the Pok&#233;mon in North Carolina, and be a good Pok&#233;mon trainer!
+      <br> &bull; I also enjoy Hip-Hop and Country music. <a href="https://www.youtube.com/watch?v=p49e8vgHvh8" target="_blank">Air (艾热)</a> is one of my favorite Chinese Hip-Hop stars.
+    </p>
+</div>
+
+This website was built with <a href="https://jekyllrb.com" target="_blank">jekyll</a> based on a template by <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a>.
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Tianlong Chen
+        </div>
+        <div class="four columns">
+          Last updated on April 2023
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/TianlongChen4')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/tianlong-chen-783862167/')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/Tianlong-Chen')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://scholar.google.com/citations?user=LE3ctn0AAAAJ')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+  </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-ViT/">
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-ViT/" class="post-title-link" itemprop="url">(NeurIPS 2021) Chasing Sparsity in Vision Transformers, An End-to-End Exploration</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-06 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-06T00:00:00-06:00">2021-12-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-05 23:47:56" itemprop="dateModified" datetime="2021-12-05T23:47:56-06:00">2021-12-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen, Y. Cheng, Z. Gan, L. Yuan, L. Zhang and Z. Wang, Neural Information Processing Systems 2021. [First Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-ViT/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-DE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-DE/" class="post-title-link" itemprop="url">(NeurIPS 2021) Data-Efficient GAN Training Beyond (Just) Augmentation, A Lottery Ticket Perspective</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-12-05 00:00:00 / Modified: 23:30:55" itemprop="dateCreated datePublished" datetime="2021-12-05T00:00:00-06:00">2021-12-05</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen, Y. Cheng, Z. Gan, J. Liu, and Z. Wang, Neural Information Processing Systems 2021. [First Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-DE/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-PLTH/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-PLTH/" class="post-title-link" itemprop="url">(NeurIPS 2021) You are caught stealing my winning lottery ticket! Making a lottery ticket claim its ownership</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-04 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-04T00:00:00-06:00">2021-12-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:00:00" itemprop="dateModified" datetime="2021-12-06T00:00:00-06:00">2021-12-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>X. Chen*, T. Chen*, Z. Zhang and Z. Wang., Neural Information Processing Systems 2021. [Co-First Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-PLTH/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-GN/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-GN/" class="post-title-link" itemprop="url">(NeurIPS 2021) Sparse Training via Boosting Pruning Plasticity with Neuroregeneration</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-03 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-03T00:00:00-06:00">2021-12-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:02:25" itemprop="dateModified" datetime="2021-12-06T00:02:25-06:00">2021-12-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>S. Liu, T. Chen, X. Chen, Z. Atashgahi, L. Yin, H. Kou, L. Shen, M. Pechenizkiy, Z. Wang, and D. Mocanu, Neural Information Processing Systems 2021. [The Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-GN/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-CL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-CL/" class="post-title-link" itemprop="url">(NeurIPS 2021) Improving Contrastive Learning on Imbalanced Data via Open-World Sampling</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-02T00:00:00-06:00">2021-12-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:21:59" itemprop="dateModified" datetime="2021-12-06T00:21:59-06:00">2021-12-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Z. Jiang, T. Chen, T. Chen and Z. Wang, Neural Information Processing Systems 2021. [The Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-CL/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/NIPS21-SLTH/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NIPS21-SLTH/" class="post-title-link" itemprop="url">(NeurIPS 2021) Sanity Checks for Lottery Tickets, Does Your Winning Ticket Really Win the Jackpot?</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-01T00:00:00-06:00">2021-12-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:30:14" itemprop="dateModified" datetime="2021-12-06T00:30:14-06:00">2021-12-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NeurIPS-21/" itemprop="url" rel="index"><span itemprop="name">NeurIPS'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>X. Ma, G. Yuan, X. Shen, T. Chen, X. Chen, X. Chen, N. Liu, M. Qin, S. Liu, Z. Wang and Y. Wang, Neural Information Processing Systems 2021. [The Forth Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/NIPS21-SLTH/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICML21-GCNLTH/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICML21-GCNLTH/" class="post-title-link" itemprop="url">(ICML 2021) A Unified Lottery Ticket Hypothesis for Graph Neural Networks</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-06-05 00:00:00 / Modified: 20:13:46" itemprop="dateCreated datePublished" datetime="2021-06-05T00:00:00-05:00">2021-06-05</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICML-21/" itemprop="url" rel="index"><span itemprop="name">ICML'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen*, Y. Sui*, X. Chan, A. Zhang, and Z. Wang, International Conference on Machine Learning 2021. [Co-first Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICML21-GCNLTH/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICML21-PAC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICML21-PAC/" class="post-title-link" itemprop="url">(ICML 2021) Efficient Lottery Ticket Finding, Less Data is More</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-04 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-04T00:00:00-05:00">2021-06-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-05 20:39:42" itemprop="dateModified" datetime="2021-06-05T20:39:42-05:00">2021-06-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICML-21/" itemprop="url" rel="index"><span itemprop="name">ICML'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Z. Zhang*, X. Chen*, T. Chen*, and Z. Wang, International Conference on Machine Learning 2021. [Co-first Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICML21-PAC/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICML21-HA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICML21-HA/" class="post-title-link" itemprop="url">(ICML 2021 Long Talk) Sparse and Imperceptible Adversarial Attack via a Homotopy Algorithm</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-03 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-03T00:00:00-05:00">2021-06-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-05 20:48:19" itemprop="dateModified" datetime="2021-06-05T20:48:19-05:00">2021-06-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICML-21/" itemprop="url" rel="index"><span itemprop="name">ICML'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>M. Zhu, T. Chen, and Z. Wang, International Conference on Machine Learning 2021. [Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICML21-HA/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICML21-JOAO/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICML21-JOAO/" class="post-title-link" itemprop="url">(ICML 2021 Long Talk) Graph Contrastive Learning Automated</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-03 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-03T00:00:00-05:00">2021-06-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-08 17:23:49" itemprop="dateModified" datetime="2021-06-08T17:23:49-05:00">2021-06-08</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICML-21/" itemprop="url" rel="index"><span itemprop="name">ICML'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Y. You, T.Chen, Y Shen, and Z. Wang, International Conference on Machine Learning 2021. [Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICML21-JOAO/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICML21-SDCL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICML21-SDCL/" class="post-title-link" itemprop="url">(ICML 2021) Self-Damaging Contrasive Learning</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-02T00:00:00-05:00">2021-06-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-05 20:55:29" itemprop="dateModified" datetime="2021-06-05T20:55:29-05:00">2021-06-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICML-21/" itemprop="url" rel="index"><span itemprop="name">ICML'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Z. Jiang, T. Chen*, B. Mortazavi, and Z. Wang, International Conference on Machine Learning 2021. [Second Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICML21-SDCL/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/CVPR21-LTH/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/CVPR21-LTH/" class="post-title-link" itemprop="url">(CVPR 2021) The Lottery Tickets Hypothesis for Supervised and Self-supervised Pre-training in Computer Vision Models</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-01T00:00:00-05:00">2021-06-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-05 21:23:33" itemprop="dateModified" datetime="2021-06-05T21:23:33-05:00">2021-06-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CVPR-21/" itemprop="url" rel="index"><span itemprop="name">CVPR'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen, J. Frankle, S. Chang, S. Liu, Y. Zhang, M. Carbin, and Z. Wang, Conference on Computer Vision and Pattern Recognition. [First Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/CVPR21-LTH/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/CVPR21-IQA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/CVPR21-IQA/" class="post-title-link" itemprop="url">(CVPR 2021) Troubleshooting Blind Image Quality Models in the Wild</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-31 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00-05:00">2021-05-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-05 21:23:27" itemprop="dateModified" datetime="2021-06-05T21:23:27-05:00">2021-06-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CVPR-21/" itemprop="url" rel="index"><span itemprop="name">CVPR'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Z. Wang, H. Wang, T. Chen, Z. Wang, and K. Ma, Conference on Computer Vision and Pattern Recognition. [Third Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/CVPR21-IQA/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/CVPRW21/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/CVPRW21/" class="post-title-link" itemprop="url">(CVPRW 2021 Spotlight Oral) BNN-BN=? Training Binary Neural Networks without Batch Normalization</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-28 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-28T00:00:00-05:00">2021-05-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-06 00:29:49" itemprop="dateModified" datetime="2021-12-06T00:29:49-06:00">2021-12-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CVPRW-21/" itemprop="url" rel="index"><span itemprop="name">CVPRW'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen, Z. Zhang, X. Ouyang, Z. Liu, Z. Shen and Z. Wang, CVPR Workshop on Binary Networks for Computer Vision. [First Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/CVPRW21/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR21-ADV/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICLR21-ADV/" class="post-title-link" itemprop="url">(ICLR 2021) Robust Overfitting may be mitigated by properly learned smoothening</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-02T00:00:00-05:00">2021-05-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-04 10:52:30" itemprop="dateModified" datetime="2021-03-04T10:52:30-06:00">2021-03-04</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICLR-21/" itemprop="url" rel="index"><span itemprop="name">ICLR'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen*, Z. Zhang*, S. Liu, S. Chang, and Z. Wang, International Conference on Learning Representations 2021. [Co-first Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICLR21-ADV/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR21-LifeLT/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICLR21-LifeLT/" class="post-title-link" itemprop="url">(ICLR 2021) Long Live the Lottery, The Existence of Winning Tickets in Lifelong Learning</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-01T00:00:00-05:00">2021-05-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 20:18:35" itemprop="dateModified" datetime="2021-02-07T20:18:35-06:00">2021-02-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICLR-21/" itemprop="url" rel="index"><span itemprop="name">ICLR'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>T. Chen*, Z. Zhang*, S. Liu, S. Chang, and Z. Wang, International Conference on Learning Representations 2021. [Co-first Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICLR21-LifeLT/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tianlong-chen.github.io/ICLR21-GAN/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-      <meta itemprop="description" content="Make the change that you want to see in the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tianlong Chen (陈天龙)">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ICLR21-GAN/" class="post-title-link" itemprop="url">(ICLR 2021) GANs Can Play Lottery Tickets Too</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-30 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-30T00:00:00-05:00">2021-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 20:18:33" itemprop="dateModified" datetime="2021-02-07T20:18:33-06:00">2021-02-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ICLR-21/" itemprop="url" rel="index"><span itemprop="name">ICLR'21</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>X. Chen, Z. Zhang, Y. Sui, and T. Chen, International Conference on Learning Representations 2021. [Last Author]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ICLR21-GAN/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Tianlong Chen (陈天龙)"
-      src="https://raw.githubusercontent.com/Tianlong-Chen/Shareable-Photos/master/Aboutme/TLC.JPG">
-  <p class="site-author-name" itemprop="name">Tianlong Chen (陈天龙)</p>
-  <div class="site-description" itemprop="description">Make the change that you want to see in the world</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">46</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">22</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">44</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/Tianlong-Chen" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tianlong-Chen" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:tianlong.chen@utexas.edu" title="E-Mail → mailto:tianlong.chen@utexas.edu" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://scholar.google.com/citations?user=LE3ctn0AAAAJ" title="Google → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;LE3ctn0AAAAJ" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
-      </span>
-  </div>
-
-
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
-      Links
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://express.adobe.com/page/CAdrFMJ9QeI2y/" title="https:&#x2F;&#x2F;express.adobe.com&#x2F;page&#x2F;CAdrFMJ9QeI2y&#x2F;" rel="noopener" target="_blank">My Ph.D. Advisor</a>
-        </li>
-        <li class="links-of-blogroll-item">
-          <a href="https://github.com/VITA-Group" title="https:&#x2F;&#x2F;github.com&#x2F;VITA-Group" rel="noopener" target="_blank">VITA Github</a>
-        </li>
-    </ul>
-  </div>
-
-      </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
-        </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 2020 – 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="snowflake-o"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Tianlong Chen (陈天龙)</span>
-</div>
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
